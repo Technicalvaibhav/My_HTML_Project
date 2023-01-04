@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holidays</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+        *{
+            font-size: 14px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:linear-gradient(to bottom left,#bcdfea,#c5d7db);
+            background-position:inherit;
+            height: auto;
+        }
+        p.heading
+        {
+            display: inline-block;
+            width: 30vw;
+            color: #333333;
+            font-size: 2.2em;
+            margin-left: 20px;
+        }
+        .topnav
+        {
+            display: flex;
+            width: 100%;
+            background-color: rgb(239, 239, 235);
+            color: black;
+            min-height: 10vh;
+            align-items: center;            
+        }
+        .rightFloat
+        {
+            display: flex;
+            width: 80vw;
+            justify-content: flex-end;            
+        }
+        .topnav ul li
+        {
+            list-style-type: none;
+            display: inline-block;
+            margin: 5px 3px;
+            padding: 5px 10px;
+            font-size: 1.5em;
+        }
+        .topnav ul li a 
+        {
+            text-decoration: none;
+            font-size: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
+        li.active
+        {
+            background-color: rgb(4, 4, 80);
+            color: rgb(255, 255, 255);
+        }
+       .container
+       {
+            font-family: 'Source Sans Pro', sans-serif;;
+            width: 100%;
+            height: auto;
+       }
+       .containerInner
+       {
+            background-color: rgb(225, 234, 240);
+            position: relative;
+            top: 40%;
+            transform: translateY(2%);
+            border-radius: 5px;
+            width: 1200px;
+            height: fit-content;
+            margin: 0 auto;
+            margin-bottom: 150px;
+            padding-bottom: 1px;
+       }
+       header.login_here
+       {
+            font-weight: bold;
+            font-size: 1.4em;
+            background-color: rgb(23,23,101);
+            color: white;
+            padding: 6px 15px;
+       }
+       table
+       {
+            border:0.01px solid #353637;
+            margin: 25px 10px;
+            border-radius: 1px;
+            border: 1px solid #333333;
+            border-collapse: collapse;
+            width: 97%;
+            font-size: inherit;
+       }
+       table,th,td 
+       {
+        border: 1px solid rgb(163, 159, 159);
+        text-align: center;
+       }
+       th,td
+       {
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+       }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <p class="heading">
+            Welcome To Indian Railways
+        </p>
+        <div class="rightFloat">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="CONTACT US.HTML">Contact Us</a>  </li>
+                <li><a href="services at.html">Service at Station</a> </li>
+                <li><a href="meals.html">Meals</a></li>
+                <li class="active"><a href="#">Holidays</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="containerInner">
+            <header class="login_here">
+                Holidays
+            </header>
+            <table>
+                <tr style="background-color: rgb(70, 70, 186);color: whitesmoke;">
+                    <th>Train Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Facilites</th>
+                    <th>Price</th>
+                <tr>
+                <tr>
+                    <td>Jai Mata Di</td>
+                    <td>20/12/2022</td>
+                    <td>192 hours</td>
+                    <td>Chapra Junction</td>
+                    <td>Jammu Station</td>
+                    <td>3 Times Meal in a Day, Transporation Facility from your house to your Destination Point, Medical Facilities, etc</td>
+                    <td>Rs. 12999</td>
+                </tr>
+                <tr>
+                    <td>Jai Shree Ram</td>
+                    <td>22/9/2024</td>
+                    <td>240 hours</td>
+                    <td>Patna Junction</td>
+                    <td>Ayodhya Station</td>
+                    <td>3 Times Veg Meal in a Day, Medical Facilities, Special Costumes to visit Ram Mandir, Ram Bhajan and Mandir Whi Bnayenge Song by Salman, Shahrukh and Aamir Khan during the whole journey</td>
+                    <td>Rs. 10090</td>
+                </tr>
+                <tr>
+                    <td>Jagannath Dham Special</td>
+                    <td>13/02/2023</td>
+                    <td>144 hours</td>
+                    <td>Hajipur Station</td>
+                    <td>Puri Station</td>
+                    <td>3 Times Meal in a Day, Fruits for Fasting People, One Cameraman and One Guide</td>
+                    <td>Rs. 8009</td>
+                </tr>
+                <tr>
+                    <td>Bajrangbali Express</td>
+                    <td>09/01/2023</td>
+                    <td>120 hours</td>
+                    <td>Varanasi Cantt</td>
+                    <td>Vijaywada Station</td>
+                    <td>3 times North Indian Meal and Hanuman Chalisa By Bollywood Actors, Bhagwa Costumes</td>
+                    <td>Rs. 11490</td>
+                </tr>
+                <tr>
+                    <td>Baba Dham Express</td>
+                    <td>15/08/2023</td>
+                    <td>168 hours</td>
+                    <td>Varanasi Cantt</td>
+                    <td>Deoghar Junction</td>
+                    <td>3 Times Meal in a Day, Fruits for Fasting People, One Cameraman and One Guide, Bhole Baba Bhajan in train</td>
+                    <td>Rs. 9999</td>
+                </tr>
+                <tr>
+                    <td>Rajputana Express</td>
+                    <td>10/03/2023</td>
+                    <td>240 hours</td>
+                    <td>Thane Junction</td>
+                    <td>Haldighati Junction</td>
+                    <td>Full facility of Chicken and Beer. Dance performance by Sapna Chaudhary and Nora Fatehi on Rajput songs. Sword will be provided to each person during journey (NOTE: Only For RAJPUTS)
+                    </td>
+                    <td>Free of cost only after confirmation of Rajputana not by caste only by heart also you have to prove.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

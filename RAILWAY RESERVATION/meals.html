@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+        *{
+            font-size: 14px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:linear-gradient(to bottom left,#bcdfea,#c5d7db);
+            background-position:inherit;
+            height: auto;
+        }
+        p.heading
+        {
+            display: inline-block;
+            width: 30vw;
+            color: #333333;
+            font-size: 2.2em;
+            margin-left: 20px;
+        }
+        .topnav
+        {
+            display: flex;
+            width: 100%;
+            background-color: rgb(239, 239, 235);
+            color: black;
+            min-height: 10vh;
+            align-items: center;            
+        }
+        .rightFloat
+        {
+            display: flex;
+            width: 80vw;
+            justify-content: flex-end;            
+        }
+        .topnav ul li
+        {
+            list-style-type: none;
+            display: inline-block;
+            margin: 5px 3px;
+            padding: 5px 10px;
+            font-size: 1.5em;
+        }
+        .topnav ul li a 
+        {
+            text-decoration: none;
+            font-size: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
+        li.active
+        {
+            background-color: rgb(4, 4, 80);
+            color: rgb(255, 255, 255);
+        }
+       .container
+       {
+            font-family: 'Source Sans Pro', sans-serif;;
+            width: 100%;
+            height: auto;
+       }
+       .containerInner
+       {
+            background-color: rgb(225, 234, 240);
+            position: relative;
+            top: 40%;
+            transform: translateY(15%);
+            border-radius: 5px;
+            width: 700px;
+            height: fit-content;
+            margin: 0 auto;
+            margin-bottom: 150px;
+            padding-bottom: 1px;
+       }
+       header.login_here
+       {
+            font-weight: bold;
+            font-size: 1.4em;
+            background-color: rgb(23,23,101);
+            color: white;
+            padding: 6px 15px;
+       }
+       table
+       {
+            border:0.01px solid #353637;
+            margin: 25px 10px;
+            border-radius: 1px;
+            border: 1px solid #333333;
+            border-collapse: collapse;
+            width: 97%;
+            font-size: inherit;
+       }
+       table,th,td 
+       {
+        border: 1px solid rgb(163, 159, 159);
+        text-align: center;
+       }
+       th,td
+       {
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+       }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <p class="heading">
+            Welcome To Indian Railways
+        </p>
+        <div class="rightFloat">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="CONTACT US.HTML">Contact Us</a>  </li>
+                <li><a href="services at.html">Service at Station</a> </li>
+                <li class="active"><a href="">Meals</a></li>
+                <li><a href="holiday.html">Holidays</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="containerInner">
+            <header class="login_here">
+                Meals
+            </header>
+            <table>
+                <tr style="background-color: rgb(70, 70, 186);color: whitesmoke;">
+                    <th>Meal</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                <tr>
+                <tr>
+                    <td>Butter Roti</td>
+                    <td>veg</td>
+                    <td>₹10</td>
+                </tr>
+                <tr>
+                    <td>Tandoori Roti</td>
+                    <td>veg</td>
+                    <td>₹20</td>
+                </tr>
+                <tr>
+                    <td>Rice</td>
+                    <td>veg</td>
+                    <td>₹35</td>
+                </tr>
+                <tr>
+                    <td>Fried Rice</td>
+                    <td>veg</td>
+                    <td>₹50</td>
+                </tr>
+                <tr>
+                    <td>Zeera Rice</td>
+                    <td>veg</td>
+                    <td>₹55</td>
+                </tr>
+                <tr>
+                    <td>Kadahi Paneer</td>
+                    <td>veg</td>
+                    <td>₹150</td>
+                </tr>
+                <tr>
+                    <td>Butter Paneer</td>
+                    <td>veg</td>
+                    <td>₹160</td>
+                </tr>
+                <tr>
+                    <td>Matar Paneer</td>
+                    <td>veg</td>
+                    <td>₹145</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

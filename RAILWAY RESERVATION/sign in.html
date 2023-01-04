@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+        *{
+            font-size: 14px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+        background:linear-gradient(to bottom left,#bcdfea,#c5d7db);
+        background-position:inherit;
+        /* filter: blur(-8px); */
+        min-height: 100vh;
+        }
+        p.heading
+        {
+            display: inline-block;
+            width: 30vw;
+            color: rgb(30,30,95);
+            font-size: 2.2em;
+            margin-left: 10px;
+        }
+        .topnav
+        {
+            display: flex;
+            width: 100%;
+            background-color: rgb(239, 239, 235);
+            color: black;
+            min-height: 10vh;
+            align-items: center;            
+        }
+        .rightFloat
+        {
+            display: flex;
+            width: 80vw;
+            justify-content: flex-end;            
+        }
+        .topnav ul li
+        {
+            list-style-type: none;
+            display: inline-block;
+            margin: 5px 3px;
+            padding: 5px 10px;
+            font-size: 1.5em;
+        }
+        .topnav ul li a 
+        {
+            text-decoration: none;
+            font-size: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
+        li.active
+        {
+            background-color: rgb(4, 4, 80);
+            color: rgb(255, 255, 255);
+        }
+       .container
+       {
+            font-family: 'Source Sans Pro', sans-serif;;
+            width: 100%;
+            height: auto;
+       }
+       .containerInner
+       {
+            background-color: rgb(225, 234, 240);
+            position: relative;
+            top: 40%;
+            transform: translateY(25%);
+            border-radius: 5px;
+            backdrop-filter: blur(8px);
+            box-shadow: 2px 2px 5px #2773a5;
+            width: 300px;
+            height: 350px;
+            margin: 0 auto;
+            padding: 10px;
+       }
+       header.login_here
+       {
+            font-weight: bold;
+            font-size: 1.7em;
+            color: #333;
+       }
+       main.inputs img
+       {
+            width: 100%;
+            height: 70px;
+            margin-top: 10px;
+       }
+       label
+       {
+            color: rgb(47, 38, 38,0.85);
+            display: block;
+            margin-top: 5px 0 3px 0;
+            font-size: 1.2em;
+       }
+       input
+       {
+            width: 100%;
+            padding: 5px;
+            margin: 3px 0;
+       }
+       input[type="submit"]
+       {
+            margin-top: 10px;
+            background-color: rgb(75, 75, 198);
+            border: none;
+            color: white;
+            padding: 4px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 2.5px;
+       }
+       input[type="submit"]:hover
+       {
+            margin-top: 10px;
+            background-color: rgb(45, 45, 129);
+            border: none;
+            color: white;
+            padding: 4px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 2.5px;
+       }
+    </style>
+    <script>
+        function validate()
+        {
+            let x = document.forms["myForm"]["captcha"].value;
+            if(x!=1)
+            {
+                x = "";
+                alert("KOI BAT NHI, Integeration Padh ke Aao Pahle Dr. Utpal Sarkar Sir Se ");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="topnav">
+        <p class="heading">
+            Welcome To Indian Railways
+        </p>
+        <div class="rightFloat">
+            <ul>
+                <li class="active">Login</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact Us</a>  </li>
+                <li><a href="">Service at Station</a> </li>
+                <li><a href="">Meals</a></li>
+                <li><a href="">Holidays</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="containerInner">
+            <form name="myForm" action="home.html" onsubmit="return validate()">
+                <header class="login_here">
+                    Login Here
+                </header>
+                <main class="inputs">
+                    <label for="username"> Username/Email:</label>
+                    <input type="text" id="username" placeholder = "username/email-id"required>
+                    <label for="password"> Password:</label>
+                    <input type="password" id="password" placeholder = "password" required="8">
+                    <label for="captcha"> Enter Captcha:</label>
+                    <input type="number" id="captcha" placeholder = "enter Integral part of solution:"required>
+                    <img src="captcha.jpg" alt="Captcha_Img">
+                    <input type="submit" value="Login">
+                </main>
+            </form>
+        </div>
+    </div> 
+</body>
+</html>
